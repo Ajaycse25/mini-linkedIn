@@ -1,6 +1,6 @@
 import { useNavigate } from 'react-router-dom';
 import { useEffect, useState } from 'react';
-import CreatePost from '../components/createPost.jsx';
+import CreatePost from '../components/CreatePost.jsx';
 import Feed from '../components/Feed.jsx';
 
 const Community = () => {
