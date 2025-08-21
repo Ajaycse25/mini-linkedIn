@@ -5,7 +5,7 @@ const Feed = () => {
 
   const fetchFeed = async () => {
     try {
-      const res = await fetch('http://localhost:5000/api/posts/feed');
+      const res = await fetch('https://mini-linkedin-backend-tzir.onrender.com/api/posts/feed');
       const data = await res.json();
 
       if (!res.ok) throw new Error(data.message || 'Failed to load feed');
