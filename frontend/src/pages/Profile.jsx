@@ -18,7 +18,7 @@ const Profile = () => {
           return;
         }
 
-        const res = await fetch("http://localhost:5000/api/user/profile", {
+        const res = await fetch("https://mini-linkedin-backend-tzir.onrender.com/api/user/profile", {
           headers: {
             Authorization: `Bearer ${token}`,
           },
@@ -46,7 +46,7 @@ const Profile = () => {
 
     try {
       const token = localStorage.getItem("token");
-      const res = await fetch(`http://localhost:5000/api/posts/${postId}`, {
+      const res = await fetch(`https://mini-linkedin-backend-tzir.onrender.com/api/posts/${postId}`, {
         method: "DELETE",
         headers: {
           Authorization: `Bearer ${token}`,
