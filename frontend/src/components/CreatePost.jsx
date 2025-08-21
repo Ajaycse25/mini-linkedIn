@@ -7,7 +7,7 @@ const CreatePost = ({ token, posts, setPosts }) => {
     e.preventDefault();
 
     try {
-      const res = await fetch('http://localhost:5000/api/posts', {
+      const res = await fetch('https://mini-linkedin-backend-tzir.onrender.com/api/posts', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
